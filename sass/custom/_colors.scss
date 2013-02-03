@@ -19,25 +19,36 @@
 //$solarized: light;
 
 /* If you want to tweak the Solarized colors you can do that here */
-//$base03:          #002b36; //darkest blue
-//$base02:          #073642; //dark blue
-//$base01:          #586e75; //darkest gray
-//$base00:          #657b83; //dark gray
-//$base0:           #839496; //medium gray
-//$base1:           #93a1a1; //medium light gray
-//$base2:           #eee8d5; //cream
-//$base3:           #fdf6e3; //white
-//$solar-yellow:    #b58900;
-//$solar-orange:    #cb4b16;
-//$solar-red:       #dc322f;
-//$solar-magenta:   #d33682;
-//$solar-violet:    #6c71c4;
-//$solar-blue:      #268bd2;
-//$solar-cyan:      #2aa198;
-//$solar-green:     #859900;
+// $base03:          #141414; // Twilight dark gray background
+// $base02:          #333333; // 
+// $base01:          #515151; // 
+// $base00:          #707070; // 
+// $base0:           #8F8F8F; // 
+// $base1:           #AEAEAE; // 
+// $base2:           #CCCCCC; // 
+// $base3:           #EBEBEB; // Light gray
+// $solar-yellow:    #e9c062; // 
+// $solar-orange:    #CDA869; // 
+// $solar-red:       #CF6A46; // 
+// $solar-magenta:   #9B859D; // violet
+// $solar-violet:    #9B859D;
+// $solar-blue:      #7587A6; // 
+// $solar-cyan:      #8F9D6A; // green
+// $solar-green:     #8F9D6A; // 
 
+// $solar-yellow:    #9B859D; // Twilight violet
+// $solar-orange:    #e9c062; // Twilight yellow
+// $solar-red:       #CF6A46; // Twilight red
+// $solar-magenta:   #ffffff;
+// $solar-violet:    #ffffff;
+// $solar-blue:      #7587A6; // Twilight blue
+// $solar-cyan:      #8F9D6A; // Twilight green
+// $solar-green:     #CDA869; // Twilight light brown
 
 /* Non highlighted code colors */
 //$pre-bg: $base03;
 //$pre-border: darken($base02, 5);
 //$pre-color: $base1;
+
+
+$code-bg: #141414

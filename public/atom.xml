@@ -4,7 +4,7 @@
   <title><![CDATA[Alestanis' Blog]]></title>
   <link href="http://blog.alestanis.com/atom.xml" rel="self"/>
   <link href="http://blog.alestanis.com/"/>
-  <updated>2013-02-03T19:20:02+01:00</updated>
+  <updated>2013-02-04T00:12:06+01:00</updated>
   <id>http://blog.alestanis.com/</id>
   <author>
     <name><![CDATA[Alejandra Estanislao]]></name>
@@ -18,7 +18,11 @@
     <link href="http://blog.alestanis.com/2013/02/03/hello-everyone/"/>
     <updated>2013-02-03T18:18:00+01:00</updated>
     <id>http://blog.alestanis.com/2013/02/03/hello-everyone</id>
-    <content type="html"><![CDATA[
+    <content type="html"><![CDATA[<p>It’s been a year or so since I first thought about starting a blog. And then there was work, family and more work, and time flew by without me even noticing. Then a friend told me about <a href="http://octopress.org/">Octopress</a>, so I checked it out.</p>
+
+<p>Hmm… Blogging framework for hackers, Ruby, Heroku, markup and one-line deloyment? Sounds great!</p>
+
+<p>In less than an hour I had cloned Octopress, bought my domain, linked it to Heroku and deployed my beautifully empty blog. Yay! This <em>is</em> blogging for hackers.</p>
 ]]></content>
   </entry>
   
