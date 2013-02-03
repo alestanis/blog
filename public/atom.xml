@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Alestanis' Blog]]></title>
+  <link href="http://blog.alestanis.com/atom.xml" rel="self"/>
+  <link href="http://blog.alestanis.com/"/>
+  <updated>2013-02-03T18:56:29+01:00</updated>
+  <id>http://blog.alestanis.com/</id>
+  <author>
+    <name><![CDATA[Alejandra Estanislao]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Hello everyone!]]></title>
+    <link href="http://blog.alestanis.com/2013/02/03/hello-everyone/"/>
+    <updated>2013-02-03T18:18:00+01:00</updated>
+    <id>http://blog.alestanis.com/2013/02/03/hello-everyone</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
+  
+</feed>
