@@ -6,7 +6,7 @@ comments: true
 categories: 
 ---
 
-It's been a year or so since I first thought about starting a blog. And then there was work, family and more work, and time flew by without me even noticing. Then a friend told me about [Octopress](http://octopress.org/), so I checked it out.
+It's been a year or so since I first thought about starting a blog. And then there was work, family, more work, two cats, and time flew by without me even noticing. Then a friend told me about [Octopress](http://octopress.org/), so I checked it out.
 
 Hmm... Blogging framework for hackers, Ruby, Heroku, markup and one-line deloyment? Sounds great!
 
