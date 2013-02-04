@@ -4,7 +4,7 @@
   <title><![CDATA[Alestanis' Blog]]></title>
   <link href="http://blog.alestanis.com/atom.xml" rel="self"/>
   <link href="http://blog.alestanis.com/"/>
-  <updated>2013-02-05T00:24:25+01:00</updated>
+  <updated>2013-02-05T00:56:39+01:00</updated>
   <id>http://blog.alestanis.com/</id>
   <author>
     <name><![CDATA[Alejandra Estanislao]]></name>
@@ -20,7 +20,7 @@
     <id>http://blog.alestanis.com/2013/02/04/octopress-and-the-twilight-color-scheme</id>
     <content type="html"><![CDATA[<p><img class="right" src="http://ethanschoonover.com/solarized/img/solarized-yinyang.png" width="150" height="150" title="Solarized color schemes" /></p>
 
-<p>Well, I <em>am</em> a developer (a <em>nazi</em> that-yellow-is-not-yellowy-enough developer) so the first thing I tried to do with my new blog was to see how <strong>code looked like</strong> in it.
+<p>Well, I <em>am</em> a developer (a that-yellow-is-not-yellowy-enough developer) so the first thing I tried to do with my new blog was to see how <strong>code looked like</strong> in it.
 Octopress uses two default themes from <a href="http://ethanschoonover.com/solarized">Solarized</a>; a dark one and a light one (image to the right).</p>
 
 <p>I tried the dark one on a snippet of Ruby/Rails and I got this:</p>

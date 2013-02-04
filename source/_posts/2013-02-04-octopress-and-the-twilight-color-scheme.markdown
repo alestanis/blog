@@ -8,7 +8,7 @@ categories:
 
 {% img right http://ethanschoonover.com/solarized/img/solarized-yinyang.png 150 150 Solarized color schemes %}
 
-Well, I *am* a developer (a *nazi* that-yellow-is-not-yellowy-enough developer) so the first thing I tried to do with my new blog was to see how **code looked like** in it.
+Well, I *am* a developer (a that-yellow-is-not-yellowy-enough developer) so the first thing I tried to do with my new blog was to see how **code looked like** in it.
 Octopress uses two default themes from [Solarized](http://ethanschoonover.com/solarized); a dark one and a light one (image to the right).
 
 I tried the dark one on a snippet of Ruby/Rails and I got this:
