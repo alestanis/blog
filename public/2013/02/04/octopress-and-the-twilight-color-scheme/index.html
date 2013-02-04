@@ -1,0 +1,526 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Octopress and the Twilight color scheme - Alestanis' Blog</title>
+  <meta name="author" content="Alejandra Estanislao">
+
+  
+  <meta name="description" content="Well, I am a developer (a nazi that-yellow-is-not-yellowy-enough developer) so the first thing I tried to do with my new blog was to see how code &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://blog.alestanis.com/2013/02/04/octopress-and-the-twilight-color-scheme/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="Alestanis' Blog" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Alestanis' Blog</a></h1>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:blog.alestanis.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Octopress and the Twilight Color Scheme</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-02-04T00:17:00+01:00" pubdate data-updated="true">Feb 4<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p><img class="right" src="http://ethanschoonover.com/solarized/img/solarized-yinyang.png" width="150" height="150" title="Solarized color schemes" /></p>
+
+<p>Well, I <em>am</em> a developer (a <em>nazi</em> that-yellow-is-not-yellowy-enough developer) so the first thing I tried to do with my new blog was to see how <strong>code looked like</strong> in it.
+Octopress uses two default themes from <a href="http://ethanschoonover.com/solarized">Solarized</a>; a dark one and a light one (image to the right).</p>
+
+<p>I tried the dark one on a snippet of Ruby/Rails and I got this:</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+<span class="line-number">11</span>
+<span class="line-number">12</span>
+</pre></td><td class="code"><pre><code class="ruby"><span class="line"><span class="k">class</span> <span class="nc">CookieMonster</span>
+</span><span class="line">  <span class="n">field</span> <span class="ss">:cookies</span><span class="p">,</span> <span class="ss">type</span><span class="p">:</span> <span class="nb">Integer</span>
+</span><span class="line">
+</span><span class="line">  <span class="k">def</span> <span class="nf">eat_cookies</span><span class="p">(</span><span class="n">number_of_cookies</span><span class="p">,</span> <span class="n">cookie_flavor</span><span class="p">)</span>
+</span><span class="line">    <span class="k">if</span> <span class="nb">self</span><span class="o">.</span><span class="n">cookies</span> <span class="o">&lt;</span> <span class="n">number_of_cookies</span>
+</span><span class="line">      <span class="k">raise</span> <span class="s2">&quot;You don&#39;t have enough cookies!&quot;</span>
+</span><span class="line">    <span class="k">end</span>
+</span><span class="line">    <span class="nb">puts</span> <span class="s2">&quot;You are going to eat </span><span class="si">#{</span><span class="n">number_of_cookies</span><span class="si">}</span><span class="s2"> </span><span class="si">#{</span><span class="n">cookie_flavor</span><span class="si">}</span><span class="s2"> cookies&quot;</span>
+</span><span class="line">    <span class="nb">self</span><span class="o">.</span><span class="n">cookies</span> <span class="o">-=</span> <span class="n">number_of_cookies</span>
+</span><span class="line">    <span class="nb">self</span><span class="o">.</span><span class="n">save!</span>
+</span><span class="line">  <span class="k">end</span>
+</span><span class="line"><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p><em>Ouch!</em> So. Much. Blue.</p>
+
+<p>When I started web development, I worked on Vim using the <strong>Twilight color scheme</strong>. Then, I switched to TextMate using the Twilight color scheme. Now, I work on Sublime Text 2 using… the Twilight color scheme. I <strong>like it so much</strong> that I even pimped my Eclipse at work (I write software in C++) for my code to look like the Twilight color scheme. The next natural step was to find a way to have code snippets inside my blog with the same colors I love and use every day.</p>
+
+<p>For those of you that don’t know what Twilight looks like, here’s the same code snippet using its colors:</p>
+
+<div><table class="CodeRay"><tr>
+  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><a href="#n1" name="n1">1</a>
+<a href="#n2" name="n2">2</a>
+<a href="#n3" name="n3">3</a>
+<a href="#n4" name="n4">4</a>
+<a href="#n5" name="n5">5</a>
+<a href="#n6" name="n6">6</a>
+<a href="#n7" name="n7">7</a>
+<a href="#n8" name="n8">8</a>
+<a href="#n9" name="n9">9</a>
+<strong><a href="#n10" name="n10">10</a></strong>
+<a href="#n11" name="n11">11</a>
+<a href="#n12" name="n12">12</a>
+</pre></td>
+  <td class="code"><pre><span class="keyword">class</span> <span class="class">CookieMonster</span>
+  field <span class="symbol">:cookies</span>, type: <span class="constant">Integer</span>
+  
+  <span class="keyword">def</span> <span class="function">eat_cookies</span>(number_of_cookies, cookie_flavor)
+    <span class="keyword">if</span> <span class="predefined-constant">self</span>.cookies &lt; number_of_cookies
+      raise <span class="string"><span class="delimiter">&quot;</span><span class="content">You don't have enough cookies!</span><span class="delimiter">&quot;</span></span>
+    <span class="keyword">end</span>
+    puts <span class="string"><span class="delimiter">&quot;</span><span class="content">You are going to eat </span><span class="inline"><span class="inline-delimiter">#{</span>number_of_cookies<span class="inline-delimiter">}</span></span><span class="content"> </span><span class="inline"><span class="inline-delimiter">#{</span>cookie_flavor<span class="inline-delimiter">}</span></span><span class="content"> cookies</span><span class="delimiter">&quot;</span></span>
+    <span class="predefined-constant">self</span>.cookies -= number_of_cookies
+    <span class="predefined-constant">self</span>.save!
+  <span class="keyword">end</span>
+<span class="keyword">end</span>
+</pre></td>
+</tr></table>
+</div>
+
+<p>Wow, I feel much better already. <em>Phew!</em></p>
+
+<h3 id="getting-to-the-dirty-business">Getting to the dirty business</h3>
+
+<p>To install Twilight color scheme in Octopress, I followed what chico explained in <a href="http://oblita.com/blog/2012/07/06/octopress-with-mathjax-by-kramdown/">this blog post</a>, with a few tweaks.
+First of all, you have to install kramdown and CodeRay by adding the following lines to your <code>Gemfile</code>:</p>
+
+<div><table class="CodeRay"><tr>
+  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><a href="#n1" name="n1">1</a>
+<a href="#n2" name="n2">2</a>
+</pre></td>
+  <td class="code"><pre>gem <span class="string"><span class="delimiter">'</span><span class="content">kramdown</span><span class="delimiter">'</span></span>
+gem <span class="string"><span class="delimiter">'</span><span class="content">coderay</span><span class="delimiter">'</span></span>
+</pre></td>
+</tr></table>
+</div>
+
+<p>Then, change your <code>_config.yml</code> to use kramdown:</p>
+
+<div><table class="CodeRay"><tr>
+  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><a href="#n1" name="n1">1</a>
+<a href="#n2" name="n2">2</a>
+<a href="#n3" name="n3">3</a>
+<a href="#n4" name="n4">4</a>
+<a href="#n5" name="n5">5</a>
+<a href="#n6" name="n6">6</a>
+</pre></td>
+  <td class="code"><pre><span class="key">markdown</span>: <span class="string"><span class="content">kramdown</span></span>
+<span class="key">kramdown</span>:
+  <span class="key">use_coderay</span>: <span class="string"><span class="content">true</span></span>
+  <span class="key">coderay</span>:
+    <span class="key">coderay_line_numbers</span>: <span class="string"><span class="content">table</span></span>
+    <span class="key">coderay_css</span>: <span class="string"><span class="content">class</span></span>
+</pre></td>
+</tr></table>
+</div>
+
+<p>CodeRay accepts different line number styles: <code>table</code>, <code>inline</code>, <code>list</code> or <code>nil</code>. The difference between them is mostly about the background we use for the <code>CodeRay.line-numbers</code> class in our css: </p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Nil</th>
+      <th style="text-align: center">Inline / list</th>
+      <th style="text-align: center">Table</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><img src="/images/2013-02-04-nil.png" width="36" height="92" title="Nil line numbers" /></td>
+      <td style="text-align: center"><img src="/images/2013-02-04-inline.png" width="62" height="92" title="Inline line numbers" /></td>
+      <td style="text-align: center"><img src="/images/2013-02-04-table.png" width="72" height="92" title="Table line numbers" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><br /></p>
+
+<h4 id="tweaking-the-scss">Tweaking the scss</h4>
+
+<p>To use our own color scheme, we have to add a file <code>sass/custom/_coderay.scss</code> defining the color scheme and include it by adding the following line to <code>sass/custom/_styles.scss</code>:</p>
+
+<div><table class="CodeRay"><tr>
+  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><a href="#n1" name="n1">1</a>
+</pre></td>
+  <td class="code"><pre>@import &quot;custom/coderay&quot;;
+</pre></td>
+</tr></table>
+</div>
+
+<p>TextMate’s Twilight css for CodeRay is available thanks to russbrooks in <a href="https://gist.github.com/2906599">this gist</a>. What’s great about having your own color scheme with CodeRay is that you can change around a <em>hundred</em> different colors, whereas Solarized only works with eight accent colors (you’ll see later that I changed the <code>.CodeRay .constant</code> color in my custom scss file).</p>
+
+<p>Next, we have to tweak the scss in order to have the right background colors and nice table line numbers. Let’s add background and text colors in the <code>sass/custom/_colors.scss</code> file:</p>
+
+<div><table class="CodeRay"><tr>
+  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><a href="#n1" name="n1">1</a>
+<a href="#n2" name="n2">2</a>
+<a href="#n3" name="n3">3</a>
+</pre></td>
+  <td class="code"><pre>$code-bg: #141414;
+$code-color: #F8F8F8;
+$line-nb-bg: #404040;
+</pre></td>
+</tr></table>
+</div>
+
+<p>Our custom scss modifications will go in the <code>sass/custom/_styles.scss</code> file. This file is read last, so anything in it will override definitions inside <code>_coderay.scss</code> (or any other scss file).</p>
+
+<div><table class="CodeRay"><tr>
+  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><a href="#n1" name="n1">1</a>
+<a href="#n2" name="n2">2</a>
+<a href="#n3" name="n3">3</a>
+<a href="#n4" name="n4">4</a>
+<a href="#n5" name="n5">5</a>
+<a href="#n6" name="n6">6</a>
+<a href="#n7" name="n7">7</a>
+<a href="#n8" name="n8">8</a>
+<a href="#n9" name="n9">9</a>
+<strong><a href="#n10" name="n10">10</a></strong>
+<a href="#n11" name="n11">11</a>
+<a href="#n12" name="n12">12</a>
+<a href="#n13" name="n13">13</a>
+<a href="#n14" name="n14">14</a>
+<a href="#n15" name="n15">15</a>
+<a href="#n16" name="n16">16</a>
+<a href="#n17" name="n17">17</a>
+<a href="#n18" name="n18">18</a>
+<a href="#n19" name="n19">19</a>
+<strong><a href="#n20" name="n20">20</a></strong>
+<a href="#n21" name="n21">21</a>
+<a href="#n22" name="n22">22</a>
+<a href="#n23" name="n23">23</a>
+<a href="#n24" name="n24">24</a>
+<a href="#n25" name="n25">25</a>
+<a href="#n26" name="n26">26</a>
+<a href="#n27" name="n27">27</a>
+<a href="#n28" name="n28">28</a>
+<a href="#n29" name="n29">29</a>
+<strong><a href="#n30" name="n30">30</a></strong>
+<a href="#n31" name="n31">31</a>
+<a href="#n32" name="n32">32</a>
+<a href="#n33" name="n33">33</a>
+<a href="#n34" name="n34">34</a>
+<a href="#n35" name="n35">35</a>
+</pre></td>
+  <td class="code"><pre>.CodeRay {
+  background-color: $code-bg;
+  padding: 0px;
+  pre {
+    padding: 5px 0px 5px 10px;
+  }
+}
+
+.CodeRay pre, .CodeRay .highlight, .CodeRay .gist-highlight  {
+  background-color: $code-bg;
+  color: #F8F8F8;
+  margin-bottom: 0px;
+}
+
+// Nice line numbers
+table.CodeRay td {
+  padding: 0px;
+}
+.CodeRay .line-numbers, .CodeRay .no {
+  background-color: $line-nb-bg;
+  padding-right: 1em;
+  pre {
+      background-color: $line-nb-bg;
+      border: 0px;
+      margin: 0px;
+  }
+}
+.CodeRay .line { background-color: $line-nb-bg }
+.CodeRay span.line-numbers { padding: 0px 10px 0px 0px }
+
+// As in Sublime editor
+// Violet for constants (&quot;Rails&quot;)
+.CodeRay .constant { color: #9B859D; }
+// Blue for predefined-constants (&quot;self&quot;)
+.CodeRay .predefined-constant { color: #7587A6; font-weight: normal  }
+</pre></td>
+</tr></table>
+</div>
+
+<h4 id="adding-code-snippets">Adding code snippets</h4>
+
+<p>There are several ways to add code snippets now we have kramdown installed and customized.</p>
+
+<h5 id="pygments">Pygments</h5>
+
+<p>What’s great about this color scheme customization is that you can still use the default Solarized themes if you want, as I did in the beginning of this post, with the usual <code>codeblock</code> syntax.</p>
+
+<p>On the other side, you <strong>won’t be able to use the triple-backtick code blocks</strong> any more.</p>
+
+<h5 id="kramdown">kramdown</h5>
+
+<p>To add a kramdown code block, you can do the following:</p>
+
+<div><table class="CodeRay"><tr>
+  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><a href="#n1" name="n1">1</a>
+<a href="#n2" name="n2">2</a>
+<a href="#n3" name="n3">3</a>
+<a href="#n4" name="n4">4</a>
+</pre></td>
+  <td class="code"><pre>    def hello
+      puts &quot;Hello!&quot;
+    end
+{:lang=&quot;ruby&quot;}
+</pre></td>
+</tr></table>
+</div>
+
+<p>You can also use the single backtick syntax for inline code:</p>
+
+<div><table class="CodeRay"><tr>
+  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><a href="#n1" name="n1">1</a>
+</pre></td>
+  <td class="code"><pre>`def hello`{:lang=&quot;ruby&quot;}
+</pre></td>
+</tr></table>
+</div>
+
+<p><br /></p>
+
+<p>And <em>voilà</em>! You have your own color scheme, customizable at will. </p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Alejandra Estanislao</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-02-04T00:17:00+01:00" pubdate data-updated="true">Feb 4<span>th</span>, 2013</time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://blog.alestanis.com/2013/02/04/octopress-and-the-twilight-color-scheme/" data-via="" data-counturl="http://blog.alestanis.com/2013/02/04/octopress-and-the-twilight-color-scheme/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/2013/02/03/hello-everyone/" title="Previous Post: Hello everyone!">&laquo; Hello everyone!</a>
+      
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/2013/02/04/octopress-and-the-twilight-color-scheme/">Octopress and the Twilight color scheme</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2013/02/03/hello-everyone/">Hello everyone!</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+<h1>Stack Overflow</h1>
+<a href="http://stackoverflow.com/users/1225541/alestanis">
+<img src="http://stackoverflow.com/users/flair/1225541.png" width="208" height="58" alt="profile for alestanis at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for alestanis at Stack Overflow, Q&amp;A for professional and enthusiast programmers">
+</a>
+</section>
+
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/alestanis">@alestanis</a> on GitHub
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'alestanis',
+            count: 3,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Alejandra Estanislao -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>
