@@ -37,7 +37,8 @@ markdown: kramdown
 kramdown:
   use_coderay: true
   coderay:
-    coderay_line_numbers: inline
+    coderay_line_numbers: table
+    coderay_css: class
 
 paginate: 10          # Posts per page on the blog index
 pagination_dir:       # Directory base for pagination URLs eg. /blog/page/2/
