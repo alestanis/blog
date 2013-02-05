@@ -48,5 +48,7 @@ article img {
 table {
   margin-left: auto;
   margin-right: auto;
-  min-width: 80%;
+  th, td {
+    min-width: 80%;
+  }
 }

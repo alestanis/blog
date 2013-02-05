@@ -9,7 +9,7 @@ ssh_port       = "22"
 document_root  = "~/website.com/"
 rsync_delete   = false
 rsync_args     = ""  # Any extra arguments to pass to rsync
-deploy_default = "rsync"
+deploy_default = "heroku"
 
 # This will be configured for you when you run config_deploy
 deploy_branch  = "gh-pages"
@@ -242,6 +242,13 @@ task :rsync do
   end
   puts "## Deploying website via Rsync"
   ok_failed system("rsync -avze 'ssh -p #{ssh_port}' #{exclude} #{rsync_args} #{"--delete" unless rsync_delete == false} #{public_dir}/ #{ssh_user}:#{document_root}")
+end
+
+desc "Deploy via heroku"
+task :heroku do
+  ok_failed system("git add *")
+  ok_failed system("git ci -m 'update'")
+  ok_failed system("git push heroku master")
 end
 
 desc "deploy public directory to github pages"
