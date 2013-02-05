@@ -246,9 +246,12 @@ end
 
 desc "Deploy via heroku"
 task :heroku do
-  ok_failed system("git add *")
-  ok_failed system("git ci -m 'update'")
-  ok_failed system("git push heroku master")
+  puts "Adding files..."
+  system("git add *")
+  puts "\nCommitting to local repo..."
+  system("git ci -m 'update'")
+  puts "\nCommitting to Heroku..."
+  system("git push heroku master")
 end
 
 desc "deploy public directory to github pages"
