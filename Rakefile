@@ -246,12 +246,12 @@ end
 
 desc "Deploy via heroku"
 task :heroku do
-  puts "Adding files..."
-  system("git add *")
-  puts "\nCommitting to local repo..."
-  system("git ci -m 'update'")
-  puts "\nCommitting to Heroku..."
-  system("git push heroku master")
+  puts "## Adding files..."
+  system "git add *"
+  puts "## Committing to local repo..."
+  system "git ci -m 'update'"
+  puts "## Committing to Heroku..."
+  system "git push heroku master"
 end
 
 desc "deploy public directory to github pages"
