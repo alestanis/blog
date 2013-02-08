@@ -3,7 +3,7 @@ layout: post
 title: "Octopress and the Twilight color scheme"
 date: 2013-02-04 00:17
 comments: true
-categories: 
+categories: octopress color-scheme
 ---
 
 {% img right http://ethanschoonover.com/solarized/img/solarized-yinyang.png 150 150 Solarized color schemes %}
