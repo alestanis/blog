@@ -9,7 +9,7 @@
   <meta name="author" content="Alejandra Estanislao">
 
   
-  <meta name="description" content="Well, I am a developer (a that-yellow-is-not-yellowy-enough developer) so the first thing I tried to do with my new blog was to see how code looked &hellip;">
+  <meta name="description" content="Today I wanted to change a few things on my last post, but wasn’t on my main computer, so I tried to clone my blog, hosted in Heroku, to make these &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -75,6 +75,88 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2013/02/08/cloning-a-heroku-app/">Cloning a Heroku App With Git</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-02-08T14:30:00+01:00" pubdate data-updated="true">Feb 8<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Today I wanted to change a few things on my last post, but wasn’t on my main computer, so I tried to clone my blog, hosted in Heroku, to make these changes.</p>
+
+<p>I thought <em>hey, I’ll certainly do this again in the future and I don’t want to forget how to do it</em>, so here it is for posterity.</p>
+
+<p>First of all, if you have never used Heroku in the computer you are in, you have to </p>
+
+<div><table class="CodeRay"><tr>
+  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><a href="#n1" name="n1">1</a>
+</pre></td>
+  <td class="code"><pre>gem install heroku
+</pre></td>
+</tr></table>
+</div>
+
+<p>Then, you have to input your Heroku credentials, and add your computer’s key to your Heroku account :</p>
+
+<div><table class="CodeRay"><tr>
+  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><a href="#n1" name="n1">1</a>
+<a href="#n2" name="n2">2</a>
+</pre></td>
+  <td class="code"><pre>heroku login
+heroku keys:add [your key file]
+</pre></td>
+</tr></table>
+</div>
+
+<p>The computer’s key is usually <code>~/.ssh/id_rsa.pub</code>. If you don’t have a key, you can generate one using the command</p>
+
+<div><table class="CodeRay"><tr>
+  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><a href="#n1" name="n1">1</a>
+</pre></td>
+  <td class="code"><pre>ssh-keygen
+</pre></td>
+</tr></table>
+</div>
+
+<p>Finally, to clone your repo, you use</p>
+
+<div><table class="CodeRay"><tr>
+  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><a href="#n1" name="n1">1</a>
+</pre></td>
+  <td class="code"><pre>git clone git@heroku.com:my-awesome-repo.git my-directory
+</pre></td>
+</tr></table>
+</div>
+
+<p>That’s it!</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -436,6 +518,10 @@ table.CodeRay td {
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/2013/02/08/cloning-a-heroku-app/">Cloning a Heroku app with git</a>
+      </li>
     
       <li class="post">
         <a href="/2013/02/04/octopress-and-the-twilight-color-scheme/">Octopress and the Twilight color scheme</a>

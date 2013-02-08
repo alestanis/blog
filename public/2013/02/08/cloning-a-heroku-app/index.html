@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Hello everyone! - Alestanis' Blog</title>
+  <title>Cloning a Heroku app with git - Alestanis' Blog</title>
   <meta name="author" content="Alejandra Estanislao">
 
   
-  <meta name="description" content="It’s been a year or so since I first thought about starting a blog. And then there was work, family, more work, two cats, and time flew by without me &hellip;">
+  <meta name="description" content="Today I wanted to change a few things on my last post, but wasn’t on my main computer, so I tried to clone my blog, hosted in Heroku, to make these &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://blog.alestanis.com/2013/02/03/hello-everyone/">
+  <link rel="canonical" href="http://blog.alestanis.com/2013/02/08/cloning-a-heroku-app/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -78,7 +78,7 @@
   
   <header>
     
-      <h1 class="entry-title">Hello Everyone!</h1>
+      <h1 class="entry-title">Cloning a Heroku App With Git</h1>
     
     
       <p class="meta">
@@ -94,18 +94,60 @@
   
 
 
-<time datetime="2013-02-03T18:18:00+01:00" pubdate data-updated="true">Feb 3<span>rd</span>, 2013</time>
+<time datetime="2013-02-08T14:30:00+01:00" pubdate data-updated="true">Feb 8<span>th</span>, 2013</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p>It’s been a year or so since I first thought about starting a blog. And then there was work, family, more work, two cats, and time flew by without me even noticing. Then a friend told me about <a href="http://octopress.org/">Octopress</a>, so I checked it out.</p>
+<div class="entry-content"><p>Today I wanted to change a few things on my last post, but wasn’t on my main computer, so I tried to clone my blog, hosted in Heroku, to make these changes.</p>
 
-<p>Hmm… Blogging framework for hackers, Ruby, Heroku, markup and one-line deployment? Sounds great!</p>
+<p>I thought <em>hey, I’ll certainly do this again in the future and I don’t want to forget how to do it</em>, so here it is for posterity.</p>
 
-<p>In less than an hour I had cloned Octopress, bought my domain, linked it to Heroku and deployed my beautifully empty blog. Yay! This <em>is</em> blogging for hackers.</p>
+<p>First of all, if you have never used Heroku in the computer you are in, you have to </p>
+
+<div><table class="CodeRay"><tr>
+  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><a href="#n1" name="n1">1</a>
+</pre></td>
+  <td class="code"><pre>gem install heroku
+</pre></td>
+</tr></table>
+</div>
+
+<p>Then, you have to input your Heroku credentials, and add your computer’s key to your Heroku account :</p>
+
+<div><table class="CodeRay"><tr>
+  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><a href="#n1" name="n1">1</a>
+<a href="#n2" name="n2">2</a>
+</pre></td>
+  <td class="code"><pre>heroku login
+heroku keys:add [your key file]
+</pre></td>
+</tr></table>
+</div>
+
+<p>The computer’s key is usually <code>~/.ssh/id_rsa.pub</code>. If you don’t have a key, you can generate one using the command</p>
+
+<div><table class="CodeRay"><tr>
+  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><a href="#n1" name="n1">1</a>
+</pre></td>
+  <td class="code"><pre>ssh-keygen
+</pre></td>
+</tr></table>
+</div>
+
+<p>Finally, to clone your repo, you use</p>
+
+<div><table class="CodeRay"><tr>
+  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><a href="#n1" name="n1">1</a>
+</pre></td>
+  <td class="code"><pre>git clone git@heroku.com:my-awesome-repo.git my-directory
+</pre></td>
+</tr></table>
+</div>
+
+<p>That’s it!</p>
 </div>
 
 
@@ -128,15 +170,21 @@
   
 
 
-<time datetime="2013-02-03T18:18:00+01:00" pubdate data-updated="true">Feb 3<span>rd</span>, 2013</time>
+<time datetime="2013-02-08T14:30:00+01:00" pubdate data-updated="true">Feb 8<span>th</span>, 2013</time>
       
+
+<span class="categories">
+  
+    <a class='category' href='/categories/git/'>git</a>, <a class='category' href='/categories/git-clone/'>git-clone</a>, <a class='category' href='/categories/heroku/'>heroku</a>
+  
+</span>
 
 
     </p>
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://blog.alestanis.com/2013/02/03/hello-everyone/" data-via="" data-counturl="http://blog.alestanis.com/2013/02/03/hello-everyone/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://blog.alestanis.com/2013/02/08/cloning-a-heroku-app/" data-via="" data-counturl="http://blog.alestanis.com/2013/02/08/cloning-a-heroku-app/" >Tweet</a>
   
   
   <div class="g-plusone" data-size="medium"></div>
@@ -149,8 +197,8 @@
     
     <p class="meta">
       
+        <a class="basic-alignment left" href="/2013/02/04/octopress-and-the-twilight-color-scheme/" title="Previous Post: Octopress and the Twilight color scheme">&laquo; Octopress and the Twilight color scheme</a>
       
-        <a class="basic-alignment right" href="/2013/02/04/octopress-and-the-twilight-color-scheme/" title="Next Post: Octopress and the Twilight color scheme">Octopress and the Twilight color scheme &raquo;</a>
       
     </p>
   </footer>

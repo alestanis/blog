@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: git-clone | Alestanis' Blog]]></title>
+  <link href="http://blog.alestanis.com/categories/git-clone/atom.xml" rel="self"/>
+  <link href="http://blog.alestanis.com/"/>
+  <updated>2013-02-08T15:07:21+01:00</updated>
+  <id>http://blog.alestanis.com/</id>
+  <author>
+    <name><![CDATA[Alejandra Estanislao]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Cloning a Heroku app with git]]></title>
+    <link href="http://blog.alestanis.com/2013/02/08/cloning-a-heroku-app/"/>
+    <updated>2013-02-08T14:30:00+01:00</updated>
+    <id>http://blog.alestanis.com/2013/02/08/cloning-a-heroku-app</id>
+    <content type="html"><![CDATA[<p>Today I wanted to change a few things on my last post, but wasn’t on my main computer, so I tried to clone my blog, hosted in Heroku, to make these changes.</p>
+
+<p>I thought <em>hey, I’ll certainly do this again in the future and I don’t want to forget how to do it</em>, so here it is for posterity.</p>
+
+<p>First of all, if you have never used Heroku in the computer you are in, you have to </p>
+
+<div><table class="CodeRay"><tr>
+  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><a href="#n1" name="n1">1</a>
+</pre></td>
+  <td class="code"><pre>gem install heroku
+</pre></td>
+</tr></table>
+</div>
+
+<p>Then, you have to input your Heroku credentials, and add your computer’s key to your Heroku account :</p>
+
+<div><table class="CodeRay"><tr>
+  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><a href="#n1" name="n1">1</a>
+<a href="#n2" name="n2">2</a>
+</pre></td>
+  <td class="code"><pre>heroku login
+heroku keys:add [your key file]
+</pre></td>
+</tr></table>
+</div>
+
+<p>The computer’s key is usually <code>~/.ssh/id_rsa.pub</code>. If you don’t have a key, you can generate one using the command</p>
+
+<div><table class="CodeRay"><tr>
+  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><a href="#n1" name="n1">1</a>
+</pre></td>
+  <td class="code"><pre>ssh-keygen
+</pre></td>
+</tr></table>
+</div>
+
+<p>Finally, to clone your repo, you use</p>
+
+<div><table class="CodeRay"><tr>
+  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><a href="#n1" name="n1">1</a>
+</pre></td>
+  <td class="code"><pre>git clone git@heroku.com:my-awesome-repo.git my-directory
+</pre></td>
+</tr></table>
+</div>
+
+<p>That’s it!</p>
+]]></content>
+  </entry>
+  
+</feed>

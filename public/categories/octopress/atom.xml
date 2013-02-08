@@ -1,138 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
 
-<!DOCTYPE html>
-<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
-<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
-<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <title>Octopress and the Twilight color scheme - Alestanis' Blog</title>
-  <meta name="author" content="Alejandra Estanislao">
-
-  
-  <meta name="description" content="Well, I am a developer (a that-yellow-is-not-yellowy-enough developer) so the first thing I tried to do with my new blog was to see how code looked &hellip;">
-  
-
-  <!-- http://t.co/dKP3o1e -->
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="320">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  
-  <link rel="canonical" href="http://blog.alestanis.com/2013/02/04/octopress-and-the-twilight-color-scheme/">
-  <link href="/favicon.png" rel="icon">
-  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <script src="/javascripts/modernizr-2.0.js"></script>
-  <script src="/javascripts/ender.js"></script>
-  <script src="/javascripts/octopress.js" type="text/javascript"></script>
-  <link href="/atom.xml" rel="alternate" title="Alestanis' Blog" type="application/atom+xml">
-  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
-<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-
-  
-  <script type="text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-38236089-1']);
-    _gaq.push(['_setDomainName','alestanis.com'])
-    _gaq.push(['_trackPageview']);
-
-    (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-  </script>
-
-
-</head>
-
-<body   >
-  <header role="banner"><hgroup>
-  <h1><a href="/">Alestanis' Blog</a></h1>
-  
-</hgroup>
-
-</header>
-  <nav role="navigation"><ul class="subscription" data-subscription="rss">
-  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
-  
-</ul>
-  
-<form action="http://google.com/search" method="get">
-  <fieldset role="search">
-    <input type="hidden" name="q" value="site:blog.alestanis.com" />
-    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
-  </fieldset>
-</form>
-  
-<ul class="main-navigation">
-  <li><a href="/">Blog</a></li>
-  <li><a href="/archives">Archives</a></li>
-</ul>
-
-</nav>
-  <div id="main">
-    <div id="content">
-      <div>
-<article class="hentry" role="article">
-  
-  <header>
+  <title><![CDATA[Category: octopress | Alestanis' Blog]]></title>
+  <link href="http://blog.alestanis.com/categories/octopress/atom.xml" rel="self"/>
+  <link href="http://blog.alestanis.com/"/>
+  <updated>2013-02-08T15:07:21+01:00</updated>
+  <id>http://blog.alestanis.com/</id>
+  <author>
+    <name><![CDATA[Alejandra Estanislao]]></name>
     
-      <h1 class="entry-title">Octopress and the Twilight Color Scheme</h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
 
   
-
-
-<time datetime="2013-02-04T00:17:00+01:00" pubdate data-updated="true">Feb 4<span>th</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-<div class="entry-content"><p><img class="right" src="http://ethanschoonover.com/solarized/img/solarized-yinyang.png" width="150" height="150" title="Solarized color schemes" /></p>
+  <entry>
+    <title type="html"><![CDATA[Octopress and the Twilight color scheme]]></title>
+    <link href="http://blog.alestanis.com/2013/02/04/octopress-and-the-twilight-color-scheme/"/>
+    <updated>2013-02-04T00:17:00+01:00</updated>
+    <id>http://blog.alestanis.com/2013/02/04/octopress-and-the-twilight-color-scheme</id>
+    <content type="html"><![CDATA[<p><img class="right" src="http://ethanschoonover.com/solarized/img/solarized-yinyang.png" width="150" height="150" title="Solarized color schemes" ></p>
 
 <p>Well, I <em>am</em> a developer (a that-yellow-is-not-yellowy-enough developer) so the first thing I tried to do with my new blog was to see how <strong>code looked like</strong> in it.
 Octopress uses two default themes from <a href="http://ethanschoonover.com/solarized">Solarized</a>; a dark one and a light one (image to the right).</p>
 
 <p>I tried the dark one on a snippet of Ruby/Rails and I got this:</p>
 
-<div class="bogus-wrapper"><notextile><figure class="code"> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-<span class="line-number">5</span>
-<span class="line-number">6</span>
-<span class="line-number">7</span>
-<span class="line-number">8</span>
-<span class="line-number">9</span>
-<span class="line-number">10</span>
-<span class="line-number">11</span>
-<span class="line-number">12</span>
-</pre></td><td class="code"><pre><code class="ruby"><span class="line"><span class="k">class</span> <span class="nc">CookieMonster</span>
-</span><span class="line">  <span class="n">field</span> <span class="ss">:cookies</span><span class="p">,</span> <span class="ss">type</span><span class="p">:</span> <span class="nb">Integer</span>
-</span><span class="line">
-</span><span class="line">  <span class="k">def</span> <span class="nf">eat_cookies</span><span class="p">(</span><span class="n">number_of_cookies</span><span class="p">,</span> <span class="n">cookie_flavor</span><span class="p">)</span>
-</span><span class="line">    <span class="k">if</span> <span class="nb">self</span><span class="o">.</span><span class="n">cookies</span> <span class="o">&lt;</span> <span class="n">number_of_cookies</span>
-</span><span class="line">      <span class="k">raise</span> <span class="s2">&quot;You don&#39;t have enough cookies!&quot;</span>
-</span><span class="line">    <span class="k">end</span>
-</span><span class="line">    <span class="nb">puts</span> <span class="s2">&quot;You are going to eat </span><span class="si">#{</span><span class="n">number_of_cookies</span><span class="si">}</span><span class="s2"> </span><span class="si">#{</span><span class="n">cookie_flavor</span><span class="si">}</span><span class="s2"> cookies&quot;</span>
-</span><span class="line">    <span class="nb">self</span><span class="o">.</span><span class="n">cookies</span> <span class="o">-=</span> <span class="n">number_of_cookies</span>
-</span><span class="line">    <span class="nb">self</span><span class="o">.</span><span class="n">save!</span>
-</span><span class="line">  <span class="k">end</span>
-</span><span class="line"><span class="k">end</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
+<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">class</span> <span class="nc">CookieMonster</span>
+</span><span class='line'>  <span class="n">field</span> <span class="ss">:cookies</span><span class="p">,</span> <span class="ss">type</span><span class="p">:</span> <span class="nb">Integer</span><span class="o">&lt;</span><span class="sr">/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="sr">&lt;p&gt;def eat_cookies(number_of_cookies, cookie_flavor)</span>
+</span><span class='line'><span class="sr">    if self.cookies &amp;lt; number_of_cookies</span>
+</span><span class='line'><span class="sr">      raise “You don’t have enough cookies!”</span>
+</span><span class='line'><span class="sr">    end</span>
+</span><span class='line'><span class="sr">    puts “You are going to eat </span><span class="si">#{</span><span class="n">number_of_cookies</span><span class="si">}</span><span class="sr"> </span><span class="si">#{</span><span class="n">cookie_flavor</span><span class="si">}</span><span class="sr"> cookies”</span>
+</span><span class='line'><span class="sr">    self.cookies -= number_of_cookies</span>
+</span><span class='line'><span class="sr">    self.save!</span>
+</span><span class='line'><span class="sr">  end</span>
+</span><span class='line'><span class="sr">end</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p><em>Ouch!</em> So. Much. Blue.</p>
 
@@ -219,9 +136,9 @@ gem <span class="string"><span class="delimiter">'</span><span class="content">c
   </thead>
   <tbody>
     <tr>
-      <td style="text-align: center"><img src="/images/2013-02-04-nil.png" width="36" height="92" title="Nil line numbers" /></td>
-      <td style="text-align: center"><img src="/images/2013-02-04-inline.png" width="62" height="92" title="Inline line numbers" /></td>
-      <td style="text-align: center"><img src="/images/2013-02-04-table.png" width="72" height="92" title="Table line numbers" /></td>
+      <td style="text-align: center"><img src="/images/2013-02-04-nil.png" width="36" height="92" title="Nil line numbers" ></td>
+      <td style="text-align: center"><img src="/images/2013-02-04-inline.png" width="62" height="92" title="Inline line numbers" ></td>
+      <td style="text-align: center"><img src="/images/2013-02-04-table.png" width="72" height="92" title="Table line numbers" ></td>
     </tr>
   </tbody>
 </table>
@@ -375,186 +292,7 @@ table.CodeRay td {
 <p><br /></p>
 
 <p>And <em>voilà</em>! You have your own color scheme, customizable at will. </p>
-</div>
-
-
-  <footer>
-    <p class="meta">
-      
+]]></content>
+  </entry>
   
-
-<span class="byline author vcard">Posted by <span class="fn">Alejandra Estanislao</span></span>
-
-      
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-02-04T00:17:00+01:00" pubdate data-updated="true">Feb 4<span>th</span>, 2013</time>
-      
-
-<span class="categories">
-  
-    <a class='category' href='/categories/color-scheme/'>color-scheme</a>, <a class='category' href='/categories/octopress/'>octopress</a>
-  
-</span>
-
-
-    </p>
-    
-      <div class="sharing">
-  
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://blog.alestanis.com/2013/02/04/octopress-and-the-twilight-color-scheme/" data-via="" data-counturl="http://blog.alestanis.com/2013/02/04/octopress-and-the-twilight-color-scheme/" >Tweet</a>
-  
-  
-  <div class="g-plusone" data-size="medium"></div>
-  
-  
-    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
-  
-</div>
-
-    
-    <p class="meta">
-      
-        <a class="basic-alignment left" href="/2013/02/03/hello-everyone/" title="Previous Post: Hello everyone!">&laquo; Hello everyone!</a>
-      
-      
-        <a class="basic-alignment right" href="/2013/02/08/cloning-a-heroku-app/" title="Next Post: Cloning a Heroku app with git">Cloning a Heroku app with git &raquo;</a>
-      
-    </p>
-  </footer>
-</article>
-
-</div>
-
-<aside class="sidebar">
-  
-    <section>
-  <h1>Recent Posts</h1>
-  <ul id="recent_posts">
-    
-      <li class="post">
-        <a href="/2013/02/08/cloning-a-heroku-app/">Cloning a Heroku app with git</a>
-      </li>
-    
-      <li class="post">
-        <a href="/2013/02/04/octopress-and-the-twilight-color-scheme/">Octopress and the Twilight color scheme</a>
-      </li>
-    
-      <li class="post">
-        <a href="/2013/02/03/hello-everyone/">Hello everyone!</a>
-      </li>
-    
-  </ul>
-</section>
-
-<section>
-<h1>Stack Overflow</h1>
-<a href="http://stackoverflow.com/users/1225541/alestanis" target="_blank">
-<img src="http://stackoverflow.com/users/flair/1225541.png" width="208" height="58" alt="profile for alestanis at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for alestanis at Stack Overflow, Q&amp;A for professional and enthusiast programmers">
-</a>
-</section>
-
-
-<section>
-  <h1>GitHub Repos</h1>
-  <ul id="gh_repos">
-    <li class="loading">Status updating...</li>
-  </ul>
-  
-  <a href="https://github.com/alestanis">@alestanis</a> on GitHub
-  
-  <script type="text/javascript">
-    $.domReady(function(){
-        if (!window.jXHR){
-            var jxhr = document.createElement('script');
-            jxhr.type = 'text/javascript';
-            jxhr.src = '/javascripts/libs/jXHR.js';
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(jxhr, s);
-        }
-
-        github.showRepos({
-            user: 'alestanis',
-            count: 3,
-            skip_forks: true,
-            target: '#gh_repos'
-        });
-    });
-  </script>
-  <script src="/javascripts/github.js" type="text/javascript"> </script>
-</section>
-
-
-<section class="googleplus">
-  <h1>
-    <a href="https://plus.google.com/101861961642574064885?rel=author">
-      <img src="http://www.google.com/images/icons/ui/gprofile_button-32.png" width="32" height="32">
-      Google+
-    </a>
-  </h1>
-</section>
-
-
-
-  
-</aside>
-
-
-    </div>
-  </div>
-  <footer role="contentinfo"><p>
-  Copyright &copy; 2013 - Alejandra Estanislao -
-  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
-</p>
-
-</footer>
-  
-
-
-
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) {return;}
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-
-
-
-  <script type="text/javascript">
-    (function() {
-      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
-      script.src = 'https://apis.google.com/js/plusone.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
-    })();
-  </script>
-
-
-
-  <script type="text/javascript">
-    (function(){
-      var twitterWidgets = document.createElement('script');
-      twitterWidgets.type = 'text/javascript';
-      twitterWidgets.async = true;
-      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
-      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
-    })();
-  </script>
-
-
-
-
-
-</body>
-</html>
+</feed>
