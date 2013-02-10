@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: syntax-highlighting | Alestanis' Blog]]></title>
+  <link href="http://blog.alestanis.com/categories/syntax-highlighting/atom.xml" rel="self"/>
+  <link href="http://blog.alestanis.com/"/>
+  <updated>2013-02-10T12:36:15+01:00</updated>
+  <id>http://blog.alestanis.com/</id>
+  <author>
+    <name><![CDATA[Alejandra Estanislao]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Octopress and the Twilight color scheme]]></title>
+    <link href="http://blog.alestanis.com/2013/02/04/octopress-and-the-twilight-color-scheme/"/>
+    <updated>2013-02-04T00:17:00+01:00</updated>
+    <id>http://blog.alestanis.com/2013/02/04/octopress-and-the-twilight-color-scheme</id>
+    <content type="html"><![CDATA[<p><img class="right" src="http://ethanschoonover.com/solarized/img/solarized-yinyang.png" width="150" height="150" title="Solarized color schemes" ></p>
+
+<p>Well, I <em>am</em> a developer (a that-yellow-is-not-yellowy-enough developer) so the first thing I tried to do with my new blog was to see how <strong>code looked like</strong> in it.
+Octopress uses two default themes from <a href="http://ethanschoonover.com/solarized">Solarized</a>; a dark one and a light one (image to the right).</p>
+
+<p>I tried the dark one on a snippet of Ruby/Rails and I got this:</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">class</span> <span class="nc">CookieMonster</span>
+</span><span class='line'>  <span class="n">field</span> <span class="ss">:cookies</span><span class="p">,</span> <span class="ss">type</span><span class="p">:</span> <span class="nb">Integer</span><span class="o">&lt;</span><span class="sr">/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="sr">&lt;p&gt;def eat_cookies(number_of_cookies, cookie_flavor)</span>
+</span><span class='line'><span class="sr">    if self.cookies &amp;lt; number_of_cookies</span>
+</span><span class='line'><span class="sr">      raise “You don’t have enough cookies!”</span>
+</span><span class='line'><span class="sr">    end</span>
+</span><span class='line'><span class="sr">    puts “You are going to eat </span><span class="si">#{</span><span class="n">number_of_cookies</span><span class="si">}</span><span class="sr"> </span><span class="si">#{</span><span class="n">cookie_flavor</span><span class="si">}</span><span class="sr"> cookies”</span>
+</span><span class='line'><span class="sr">    self.cookies -= number_of_cookies</span>
+</span><span class='line'><span class="sr">    self.save!</span>
+</span><span class='line'><span class="sr">  end</span>
+</span><span class='line'><span class="sr">end</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p><em>Ouch!</em> So. Much. Blue.</p>
+
+<p>When I started web development, I worked on Vim using the <strong>Twilight color scheme</strong>. Then, I switched to TextMate using the Twilight color scheme. Now, I work on Sublime Text 2 using… the Twilight color scheme. I <strong>like it so much</strong> that I even pimped my Eclipse at work (I write software in C++) for my code to look like the Twilight color scheme. The next natural step was to find a way to have code snippets inside my blog with the same colors I love and use every day.</p>
+
+<p>For those of you that don’t know what Twilight looks like, here’s the same code snippet using its colors:</p>
+
+<div><table class="CodeRay"><tr>
+  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><a href="#n1" name="n1">1</a>
+<a href="#n2" name="n2">2</a>
+<a href="#n3" name="n3">3</a>
+<a href="#n4" name="n4">4</a>
+<a href="#n5" name="n5">5</a>
+<a href="#n6" name="n6">6</a>
+<a href="#n7" name="n7">7</a>
+<a href="#n8" name="n8">8</a>
+<a href="#n9" name="n9">9</a>
+<strong><a href="#n10" name="n10">10</a></strong>
+<a href="#n11" name="n11">11</a>
+<a href="#n12" name="n12">12</a>
+</pre></td>
+  <td class="code"><pre><span class="keyword">class</span> <span class="class">CookieMonster</span>
+  field <span class="symbol">:cookies</span>, type: <span class="constant">Integer</span>
+  
+  <span class="keyword">def</span> <span class="function">eat_cookies</span>(number_of_cookies, cookie_flavor)
+    <span class="keyword">if</span> <span class="predefined-constant">self</span>.cookies &lt; number_of_cookies
+      raise <span class="string"><span class="delimiter">&quot;</span><span class="content">You don't have enough cookies!</span><span class="delimiter">&quot;</span></span>
+    <span class="keyword">end</span>
+    puts <span class="string"><span class="delimiter">&quot;</span><span class="content">You are going to eat </span><span class="inline"><span class="inline-delimiter">#{</span>number_of_cookies<span class="inline-delimiter">}</span></span><span class="content"> </span><span class="inline"><span class="inline-delimiter">#{</span>cookie_flavor<span class="inline-delimiter">}</span></span><span class="content"> cookies</span><span class="delimiter">&quot;</span></span>
+    <span class="predefined-constant">self</span>.cookies -= number_of_cookies
+    <span class="predefined-constant">self</span>.save!
+  <span class="keyword">end</span>
+<span class="keyword">end</span>
+</pre></td>
+</tr></table>
+</div>
+
+<p>Wow, I feel much better already. <em>Phew!</em></p>
+
+<h3 id="getting-to-the-dirty-business">Getting to the dirty business</h3>
+
+<p>To install Twilight color scheme in Octopress, I followed what chico explained in <a href="http://oblita.com/blog/2012/07/06/octopress-with-mathjax-by-kramdown/">this blog post</a>, with a few tweaks.
+First of all, you have to install kramdown and CodeRay by adding the following lines to your <code>Gemfile</code>:</p>
+
+<div><table class="CodeRay"><tr>
+  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><a href="#n1" name="n1">1</a>
+<a href="#n2" name="n2">2</a>
+</pre></td>
+  <td class="code"><pre>gem <span class="string"><span class="delimiter">'</span><span class="content">kramdown</span><span class="delimiter">'</span></span>
+gem <span class="string"><span class="delimiter">'</span><span class="content">coderay</span><span class="delimiter">'</span></span>
+</pre></td>
+</tr></table>
+</div>
+
+<p>Then, change your <code>_config.yml</code> to use kramdown:</p>
+
+<div><table class="CodeRay"><tr>
+  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><a href="#n1" name="n1">1</a>
+<a href="#n2" name="n2">2</a>
+<a href="#n3" name="n3">3</a>
+<a href="#n4" name="n4">4</a>
+<a href="#n5" name="n5">5</a>
+<a href="#n6" name="n6">6</a>
+</pre></td>
+  <td class="code"><pre><span class="key">markdown</span>: <span class="string"><span class="content">kramdown</span></span>
+<span class="key">kramdown</span>:
+  <span class="key">use_coderay</span>: <span class="string"><span class="content">true</span></span>
+  <span class="key">coderay</span>:
+    <span class="key">coderay_line_numbers</span>: <span class="string"><span class="content">table</span></span>
+    <span class="key">coderay_css</span>: <span class="string"><span class="content">class</span></span>
+</pre></td>
+</tr></table>
+</div>
+
+<p>CodeRay accepts different line number styles: <code>table</code>, <code>inline</code>, <code>list</code> or <code>nil</code>. The difference between them is mostly about the background we use for the <code>CodeRay.line-numbers</code> class in our css: </p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Nil</th>
+      <th style="text-align: center">Inline / list</th>
+      <th style="text-align: center">Table</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><img src="/images/2013-02-04-nil.png" width="36" height="92" title="Nil line numbers" ></td>
+      <td style="text-align: center"><img src="/images/2013-02-04-inline.png" width="62" height="92" title="Inline line numbers" ></td>
+      <td style="text-align: center"><img src="/images/2013-02-04-table.png" width="72" height="92" title="Table line numbers" ></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><br /></p>
+
+<h4 id="tweaking-the-scss">Tweaking the scss</h4>
+
+<p>To use our own color scheme, we have to add a file <code>sass/custom/_coderay.scss</code> defining the color scheme and include it by adding the following line to <code>sass/custom/_styles.scss</code>:</p>
+
+<div><table class="CodeRay"><tr>
+  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><a href="#n1" name="n1">1</a>
+</pre></td>
+  <td class="code"><pre>@import &quot;custom/coderay&quot;;
+</pre></td>
+</tr></table>
+</div>
+
+<p>TextMate’s Twilight css for CodeRay is available thanks to russbrooks in <a href="https://gist.github.com/2906599">this gist</a>. What’s great about having your own color scheme with CodeRay is that you can change around a <em>hundred</em> different colors, whereas Solarized only works with eight accent colors (you’ll see later that I changed the <code>.CodeRay .constant</code> color in my custom scss file).</p>
+
+<p>Next, we have to tweak the scss in order to have the right background colors and nice table line numbers. Let’s add background and text colors in the <code>sass/custom/_colors.scss</code> file:</p>
+
+<div><table class="CodeRay"><tr>
+  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><a href="#n1" name="n1">1</a>
+<a href="#n2" name="n2">2</a>
+<a href="#n3" name="n3">3</a>
+</pre></td>
+  <td class="code"><pre>$code-bg: #141414;
+$code-color: #F8F8F8;
+$line-nb-bg: #404040;
+</pre></td>
+</tr></table>
+</div>
+
+<p>Our custom scss modifications will go in the <code>sass/custom/_styles.scss</code> file. This file is read last, so anything in it will override definitions inside <code>_coderay.scss</code> (or any other scss file).</p>
+
+<div><table class="CodeRay"><tr>
+  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><a href="#n1" name="n1">1</a>
+<a href="#n2" name="n2">2</a>
+<a href="#n3" name="n3">3</a>
+<a href="#n4" name="n4">4</a>
+<a href="#n5" name="n5">5</a>
+<a href="#n6" name="n6">6</a>
+<a href="#n7" name="n7">7</a>
+<a href="#n8" name="n8">8</a>
+<a href="#n9" name="n9">9</a>
+<strong><a href="#n10" name="n10">10</a></strong>
+<a href="#n11" name="n11">11</a>
+<a href="#n12" name="n12">12</a>
+<a href="#n13" name="n13">13</a>
+<a href="#n14" name="n14">14</a>
+<a href="#n15" name="n15">15</a>
+<a href="#n16" name="n16">16</a>
+<a href="#n17" name="n17">17</a>
+<a href="#n18" name="n18">18</a>
+<a href="#n19" name="n19">19</a>
+<strong><a href="#n20" name="n20">20</a></strong>
+<a href="#n21" name="n21">21</a>
+<a href="#n22" name="n22">22</a>
+<a href="#n23" name="n23">23</a>
+<a href="#n24" name="n24">24</a>
+<a href="#n25" name="n25">25</a>
+<a href="#n26" name="n26">26</a>
+<a href="#n27" name="n27">27</a>
+<a href="#n28" name="n28">28</a>
+<a href="#n29" name="n29">29</a>
+<strong><a href="#n30" name="n30">30</a></strong>
+<a href="#n31" name="n31">31</a>
+<a href="#n32" name="n32">32</a>
+<a href="#n33" name="n33">33</a>
+<a href="#n34" name="n34">34</a>
+<a href="#n35" name="n35">35</a>
+<a href="#n36" name="n36">36</a>
+</pre></td>
+  <td class="code"><pre>.CodeRay {
+  background-color: $code-bg;
+  padding: 0px;
+  pre {
+    padding: 5px 0px 5px 10px;
+  }
+}
+
+.CodeRay pre, .CodeRay .highlight, .CodeRay .gist-highlight  {
+  background-color: $code-bg;
+  border: 0px;
+  color: #F8F8F8;
+  margin-bottom: 0px;
+}
+
+// Nice line numbers
+table.CodeRay td {
+  padding: 0px;
+}
+.CodeRay .line-numbers, .CodeRay .no {
+  background-color: $line-nb-bg;
+  padding-right: 1em;
+  pre {
+      background-color: $line-nb-bg;
+      border: 0px;
+      margin: 0px;
+  }
+}
+.CodeRay .line { background-color: $line-nb-bg }
+.CodeRay span.line-numbers { padding: 0px 10px 0px 0px }
+
+// As in Sublime editor
+// Violet for constants (&quot;Rails&quot;)
+.CodeRay .constant { color: #9B859D; }
+// Blue for predefined-constants (&quot;self&quot;)
+.CodeRay .predefined-constant { color: #7587A6; font-weight: normal  }
+</pre></td>
+</tr></table>
+</div>
+
+<h4 id="adding-code-snippets">Adding code snippets</h4>
+
+<p>There are several ways to add code snippets now we have kramdown installed and customized.</p>
+
+<h5 id="pygments">Pygments</h5>
+
+<p>What’s great about this color scheme customization is that you can still use the default Solarized themes if you want, as I did in the beginning of this post, with the usual <code>codeblock</code> syntax.</p>
+
+<p>On the other side, you <strong>won’t be able to use the triple-backtick code blocks</strong> any more.</p>
+
+<h5 id="kramdown">kramdown</h5>
+
+<p>To add a kramdown code block, you can do the following:</p>
+
+<div><table class="CodeRay"><tr>
+  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><a href="#n1" name="n1">1</a>
+<a href="#n2" name="n2">2</a>
+<a href="#n3" name="n3">3</a>
+<a href="#n4" name="n4">4</a>
+</pre></td>
+  <td class="code"><pre>    def hello
+      puts &quot;Hello!&quot;
+    end
+{:lang=&quot;ruby&quot;}
+</pre></td>
+</tr></table>
+</div>
+
+<p>You can also use the single backtick syntax for inline code:</p>
+
+<div><table class="CodeRay"><tr>
+  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><a href="#n1" name="n1">1</a>
+</pre></td>
+  <td class="code"><pre>`def hello`{:lang=&quot;ruby&quot;}
+</pre></td>
+</tr></table>
+</div>
+
+<p><br /></p>
+
+<p>And <em>voilà</em>! You have your own color scheme, customizable at will. </p>
+]]></content>
+  </entry>
+  
+</feed>

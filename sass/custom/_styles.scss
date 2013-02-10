@@ -4,6 +4,7 @@
 
 .CodeRay {
   background-color: $code-bg;
+  font-size: 12px;
   padding: 0px;
   pre {
     padding: 5px 0px 5px 10px;
@@ -12,6 +13,7 @@
 
 .CodeRay pre, .CodeRay .highlight, .CodeRay .gist-highlight  {
   background-color: $code-bg;
+  border: 0px;
   color: #F8F8F8;
   margin-bottom: 0px;
 }
@@ -27,9 +29,9 @@ table.CodeRay td {
   background-color: $line-nb-bg;
   padding-right: 1em;
   pre {
-      background-color: $line-nb-bg;
-      border: 0px;
-      margin: 0px;
+    background-color: $line-nb-bg;
+    border: 0px;
+    margin: 0px;
   }
 }
 .CodeRay .line { background-color: $line-nb-bg }
@@ -37,7 +39,7 @@ table.CodeRay td {
 
 // As in Sublime editor
 .CodeRay .constant { color: #9B859D; }  // Violet for constants ("Rails")
-.CodeRay .predefined-constant { color: #7587A6; font-weight: normal  }  // Blue for predefined-constants ("self")
+.CodeRay .predefined-constant { color: #7587A6; font-weight: normal }  // Blue for predefined-constants ("self")
 
 // Removing the image borders
 article img {
@@ -50,3 +52,56 @@ table {
   margin-right: auto;
   width: 100%;
 }
+
+// Changing classic theme
+body > header {
+	// background-color: #F1F1F1;
+	// color: black;
+	// font-size: 18px;
+	// padding-top: 10px;
+	// padding-bottom: 10px;
+	padding: 0px;
+}
+
+// @import url(http://fonts.googleapis.com/css?family=Paprika|Quando|Yanone+Kaffeesatz:700,400);
+@import url(http://fonts.googleapis.com/css?family=Permanent+Marker|Walter+Turncoat|Lobster+Two:400,700);
+
+#nav-title {
+	font-family: $heading-font-family;
+	font-size: 22px;
+	float: left;
+	display: block;
+	padding-top: 4px;
+	padding-right: 60px;
+	margin-bottom: 0px;
+}
+
+#content .blog-index article h1 {
+	font-size: 36px;
+}
+article {
+	h1 { font-size: 34px; }
+	h2 { font-size: 30px; }
+	h3 { font-size: 26px; }
+	h4 { font-size: 22px; }
+	h5 { font-size: 18px; }
+	h6 { font-size: 14px; }
+}
+
+// For use with phase
+// body {
+//   font-size: 16px;
+// }
+
+// // For use with phase and classic layout
+// body {
+// 	 width: 80%;
+// 	 margin: auto;
+// }
+// time {
+// 	position: relative;
+// }
+// #phasebeam canvas {
+// 	width: 1191px;
+// 	height: 480px;
+// }

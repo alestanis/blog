@@ -3,7 +3,7 @@ layout: post
 title: "Octopress and the Twilight color scheme"
 date: 2013-02-04 00:17
 comments: true
-categories: octopress color-scheme
+categories: octopress color-scheme syntax-highlighting
 ---
 
 {% img right http://ethanschoonover.com/solarized/img/solarized-yinyang.png 150 150 Solarized color schemes %}
@@ -106,6 +106,7 @@ Our custom scss modifications will go in the `sass/custom/_styles.scss` file. Th
 
     .CodeRay pre, .CodeRay .highlight, .CodeRay .gist-highlight  {
       background-color: $code-bg;
+      border: 0px;
       color: #F8F8F8;
       margin-bottom: 0px;
     }

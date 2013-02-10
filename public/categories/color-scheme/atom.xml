@@ -4,7 +4,7 @@
   <title><![CDATA[Category: color-scheme | Alestanis' Blog]]></title>
   <link href="http://blog.alestanis.com/categories/color-scheme/atom.xml" rel="self"/>
   <link href="http://blog.alestanis.com/"/>
-  <updated>2013-02-08T15:07:21+01:00</updated>
+  <updated>2013-02-10T12:36:15+01:00</updated>
   <id>http://blog.alestanis.com/</id>
   <author>
     <name><![CDATA[Alejandra Estanislao]]></name>
@@ -211,6 +211,7 @@ $line-nb-bg: #404040;
 <a href="#n33" name="n33">33</a>
 <a href="#n34" name="n34">34</a>
 <a href="#n35" name="n35">35</a>
+<a href="#n36" name="n36">36</a>
 </pre></td>
   <td class="code"><pre>.CodeRay {
   background-color: $code-bg;
@@ -222,6 +223,7 @@ $line-nb-bg: #404040;
 
 .CodeRay pre, .CodeRay .highlight, .CodeRay .gist-highlight  {
   background-color: $code-bg;
+  border: 0px;
   color: #F8F8F8;
   margin-bottom: 0px;
 }
