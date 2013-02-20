@@ -9,7 +9,7 @@
   <meta name="author" content="Alejandra Estanislao">
 
   
-  <meta name="description" content="Today I wanted to change a few things on my last post, but wasn’t on my main computer, so I tried to clone my blog, hosted in Heroku, to make these &hellip;">
+  <meta name="description" content="In my first job, part of my work was to code for a big project that had started many years before, and on which many developers had worked before. &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -78,6 +78,222 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2013/02/17/replacing-with-regexes-in-all-your-code-files/">Replacing With Regexes in All Your Code Files</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-02-17T18:39:00+01:00" pubdate data-updated="true">Feb 17<span>th</span>, 2013</time>
+        
+         | <a href="/2013/02/17/replacing-with-regexes-in-all-your-code-files/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>In my first job, part of my work was to code for a big project that had started many years before, and on which many developers had worked before. <em>And you could see it</em>.</p>
+
+<p>At the time, the company didn’t have any global coding practices, so each one did as they pleased. A year before I came into the project, the person in charge decided developers would start using the <a href="http://google-styleguide.googlecode.com/svn/trunk/cppguide.xml">Google C++ Style Guide</a>, so new files looked alike and had the same feeling, but nobody did a thing for the old codebase.</p>
+
+<p>At one point, I was the only developer working on the project, so I decided to unify the code with some sed-perl-regex love.</p>
+
+<h2 id="modifying-only-code-files">Modifying only code files</h2>
+
+<p>The project was on version control, so there were lots of hidden version files with the code files. I didn’t want to modify any non-code file, so I used a little <code>find</code> to work only on a subset of the files. I put everything in a script I named <code>sedincode</code>, taking a regex as a parameter:</p>
+
+<div><table class="CodeRay"><tr>
+  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><a href="#n1" name="n1">1</a>
+<a href="#n2" name="n2">2</a>
+<a href="#n3" name="n3">3</a>
+<a href="#n4" name="n4">4</a>
+<a href="#n5" name="n5">5</a>
+<a href="#n6" name="n6">6</a>
+</pre></td>
+  <td class="code"><pre><span class="doctype">#!/usr/bin/env bash</span>
+
+<span class="keyword">for</span> file <span class="keyword">in</span> <span class="error">$</span>(find -name *.cpp -o -name *.h)
+<span class="keyword">do</span>
+    sed -r -i <span class="global-variable">$1</span> <span class="global-variable">$file</span>
+done
+</pre></td>
+</tr></table>
+</div>
+
+<p>Then I started correcting some coding practices, such as adding a space after a comma</p>
+
+<div><table class="CodeRay"><tr>
+  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><a href="#n1" name="n1">1</a>
+</pre></td>
+  <td class="code"><pre>$ ~/sedincode &quot;s/\,([^\s])/, \1/g&quot;
+</pre></td>
+</tr></table>
+</div>
+
+<p>and removing spaces before them</p>
+
+<div><table class="CodeRay"><tr>
+  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><a href="#n1" name="n1">1</a>
+</pre></td>
+  <td class="code"><pre>$ ~/sedincode &quot;s/([^\s])\s+\,/\1,/g&quot;
+</pre></td>
+</tr></table>
+</div>
+
+<h2 id="erase-all-the-newlines">Erase all the newlines!</h2>
+
+<p><img class="center" src="/images/2013-02-17-erase-all-the-newlines.jpg" title="Erase all the newlines!" /></p>
+
+<p>One of the things that annoyed me the most in the codebase was having, for roughly half of the functions, opening brackets all alone in a newline, like this:</p>
+
+<div><table class="CodeRay"><tr>
+  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><a href="#n1" name="n1">1</a>
+<a href="#n2" name="n2">2</a>
+<a href="#n3" name="n3">3</a>
+<a href="#n4" name="n4">4</a>
+</pre></td>
+  <td class="code"><pre><span class="directive">void</span> myFunction()
+{  <span class="comment">// How annoying.</span>
+    cout &lt;&lt; <span class="string"><span class="delimiter">&quot;</span><span class="content">Howdy!</span><span class="delimiter">&quot;</span></span> &lt;&lt; endl;
+}
+</pre></td>
+</tr></table>
+</div>
+
+<p>To correct these, we need to span over two lines, so instead of using <code>sed</code> for my replacements, I went for <code>perl</code>, because it allows to treat the whole file at once by undefining the meaning of the end of a line with the <code>BEGIN{undef $/;}</code> snippet. I replaced <code>sed</code> by <code>perl</code> inside my <code>sedincode</code> script</p>
+
+<div><table class="CodeRay"><tr>
+  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><a href="#n1" name="n1">1</a>
+<a href="#n2" name="n2">2</a>
+<a href="#n3" name="n3">3</a>
+<a href="#n4" name="n4">4</a>
+<a href="#n5" name="n5">5</a>
+</pre></td>
+  <td class="code"><pre><span class="keyword">for</span> file <span class="keyword">in</span> <span class="error">$</span>(find -name *.cpp -o -name *.h)
+<span class="keyword">do</span>
+    <span class="comment"># sed -r -i $1 $file</span>
+    perl -i -pe <span class="string"><span class="delimiter">&quot;</span><span class="content">BEGIN{undef $/;} $1</span><span class="delimiter">&quot;</span></span> <span class="global-variable">$file</span>
+done
+</pre></td>
+</tr></table>
+</div>
+
+<p>and then I used</p>
+
+<div><table class="CodeRay"><tr>
+  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><a href="#n1" name="n1">1</a>
+</pre></td>
+  <td class="code"><pre>$ ~/sedincode &quot;s/\n\{/ {/g&quot;
+</pre></td>
+</tr></table>
+</div>
+
+<p>which simply replaces a newline followed by an opening bracket, by a space and an opening bracket. And yay, <em>it works!</em></p>
+
+<div><table class="CodeRay"><tr>
+  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><a href="#n1" name="n1">1</a>
+<a href="#n2" name="n2">2</a>
+<a href="#n3" name="n3">3</a>
+</pre></td>
+  <td class="code"><pre><span class="directive">void</span> myFunction() { <span class="comment">// Not annoying any more!</span>
+    cout &lt;&lt; <span class="string"><span class="delimiter">&quot;</span><span class="content">Howdy!</span><span class="delimiter">&quot;</span></span> &lt;&lt; endl;
+}
+</pre></td>
+</tr></table>
+</div>
+
+<h2 id="no-dont-erase-all-the-newlines">No! Don’t erase all the newlines!</h2>
+
+<p>After doing some small replacements using my perl one-liner, I ran <a href="http://en.wikipedia.org/wiki/Cpplint">cpplint</a> over the codebase to get a more precise feeling about other coding practices that were not put into practice and got… more than <em>one hundred thousand errors</em>.</p>
+
+<p>I decided to ignore some of the errors, and try to correct others using my perl regex weapon. Many of them were about spacing in and around comments. For instance, cpplint doesn’t like it when comment bars are not preceded by at least two spaces, and followed by one space:</p>
+
+<div><table class="CodeRay"><tr>
+  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><a href="#n1" name="n1">1</a>
+</pre></td>
+  <td class="code"><pre><span class="directive">void</span> myFunction() {<span class="comment">//cpplint shows two warnings here.</span>
+</pre></td>
+</tr></table>
+</div>
+
+<p>I thought this was a piece of cake with regexes so I launched several perl replacements to fix the spacing problems around comments and punctuation.
+The thing is, when you tell perl to ignore the end of the lines, sometimes it ignores <em>too much</em> of the ends of the lines (a newline can now be matched by many symbols you are <em>not</em> thinking about). I thought my replacements would behave like <code>sed</code> replacements, but instead, one of them transformed files like this:</p>
+
+<div><table class="CodeRay"><tr>
+  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><a href="#n1" name="n1">1</a>
+<a href="#n2" name="n2">2</a>
+<a href="#n3" name="n3">3</a>
+<a href="#n4" name="n4">4</a>
+<a href="#n5" name="n5">5</a>
+</pre></td>
+  <td class="code"><pre><span class="directive">void</span> myFunction() {
+<span class="comment">//    First line of comment</span>
+<span class="comment">//    and the next part of the comment</span>
+    cout &lt;&lt; <span class="string"><span class="delimiter">&quot;</span><span class="content">Howdy!</span><span class="delimiter">&quot;</span></span> &lt;&lt; endl;
+}
+</pre></td>
+</tr></table>
+</div>
+
+<p>into this:</p>
+
+<div><table class="CodeRay"><tr>
+  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><a href="#n1" name="n1">1</a>
+<a href="#n2" name="n2">2</a>
+<a href="#n3" name="n3">3</a>
+</pre></td>
+  <td class="code"><pre><span class="directive">void</span> myFunction(){  <span class="comment">//    First line of comment  //    and the next part of the comment</span>
+    cout &lt;&lt; <span class="string"><span class="delimiter">&quot;</span><span class="content">Howdy!</span><span class="delimiter">&quot;</span></span> &lt;&lt; endl;
+}
+</pre></td>
+</tr></table>
+</div>
+
+<p>and all the Eclipse automatic comments were broken. <em>Oops.</em></p>
+
+<p>So I instantly switched back to the <code>sed</code> version inside <code>sedincode</code>, and left the <code>perl</code> version in a comment for when I really needed it. I was also very happy of having <code>svn revert</code> that day.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>Perl multiline replacement (and regex replacement in general) is a strong weapon, and as such, <strong>use it with caution</strong> (and with some good version control).</p>
+
+<h2 id="bonus--some-of-the-regexes-i-used">Bonus : some of the regexes I used</h2>
+
+<p>Here are some of the regexes I used to prettify the code base and correct cpplint warnings:</p>
+
+<ul>
+  <li>adding a space after a comma: <code>s/\,([^\s])/, \1/g</code>. You can use variations of this for other punctuation signs or operators.</li>
+  <li>removing spaces before references: <code>s/([a-zA-Z_]+)\s&amp;\s/\1&amp; /g</code>. I added an extra space to match after the <code>&amp;</code> to avoid transforming <code>foo &amp;&amp; bar</code> into <code>foo&amp;&amp; bar</code>.
+ <br />
+<em>See? You have to be careful, you didn’t think about <code>&amp;&amp;</code> did you?</em></li>
+  <li>adding two spaces before each one-line comment: <code>s/([^\s])\/\//\1  \/\//g</code> and <code>s/([^\s])\s\/\//\1  \/\//g</code> (for cases with zero and one space before the comment)</li>
+  <li>adding a space to transform <code>){</code> into <code>) {</code>: <code>s/\)\{/) {/g</code></li>
+  <li>removing newlines before bracket openings: <code>s/\n\{/ {/g</code>. To be used with the <code>perl</code> version.</li>
+</ul>
+
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -529,6 +745,10 @@ table.CodeRay td {
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/2013/02/17/replacing-with-regexes-in-all-your-code-files/">Replacing with regexes in all your code files</a>
+      </li>
     
       <li class="post">
         <a href="/2013/02/08/cloning-a-heroku-app/">Cloning a Heroku app with git</a>
