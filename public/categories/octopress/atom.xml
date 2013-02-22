@@ -4,7 +4,7 @@
   <title><![CDATA[Category: octopress | Alestanis' Blog]]></title>
   <link href="http://blog.alestanis.com/categories/octopress/atom.xml" rel="self"/>
   <link href="http://blog.alestanis.com/"/>
-  <updated>2013-02-22T23:28:22+01:00</updated>
+  <updated>2013-02-22T23:28:37+01:00</updated>
   <id>http://blog.alestanis.com/</id>
   <author>
     <name><![CDATA[Alejandra Estanislao]]></name>
@@ -21,7 +21,9 @@
     <content type="html"><![CDATA[<p>I love Chuck Norris. And most of all, I love nerdy Chuck Norris Jokes.</p>
 
 <p>A few days ago, one of my colleagues sent me a link about a <a href="http://criso.github.com/ChuckNorrisException/">ChuckNorrisException</a> and got me browsing through the web searching for more Chuck Norris developer jokes.
-After looking for <a href="https://github.com/search?q=chuck+norris&amp;ref=commandbar">“chuck norris” on github</a>, I found the <a href="http://www.icndb.com/">Internet Chuck Norris Data Base</a>, which contains hundreds of Chuck Norris jokes separated into categories, and has a RESTful API. <em>Bingo!</em></p>
+After looking for <a href="https://github.com/search?q=chuck+norris&amp;ref=commandbar">“chuck norris” on github</a>, I found the <a href="http://www.icndb.com/">Internet Chuck Norris Data Base</a>, which contains hundreds of Chuck Norris jokes separated into categories, and has a RESTful API.</p>
+
+<p><em>Bingo!</em></p>
 
 <p>I thought it would be great to have random jokes on my blog. I didn’t find any plugin in the <a href="https://github.com/imathis/octopress/wiki/3rd-party-plugins">Octopress plugins list</a>, so I started developing one straight away.</p>
 

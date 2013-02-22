@@ -9,7 +9,9 @@ categories: octopress chuck-norris
 I love Chuck Norris. And most of all, I love nerdy Chuck Norris Jokes.
 
 A few days ago, one of my colleagues sent me a link about a [ChuckNorrisException](http://criso.github.com/ChuckNorrisException/) and got me browsing through the web searching for more Chuck Norris developer jokes.
-After looking for ["chuck norris" on github](https://github.com/search?q=chuck+norris&ref=commandbar), I found the [Internet Chuck Norris Data Base](http://www.icndb.com/), which contains hundreds of Chuck Norris jokes separated into categories, and has a RESTful API. *Bingo!*
+After looking for ["chuck norris" on github](https://github.com/search?q=chuck+norris&ref=commandbar), I found the [Internet Chuck Norris Data Base](http://www.icndb.com/), which contains hundreds of Chuck Norris jokes separated into categories, and has a RESTful API.
+
+*Bingo!*
 
 I thought it would be great to have random jokes on my blog. I didn't find any plugin in the [Octopress plugins list](https://github.com/imathis/octopress/wiki/3rd-party-plugins), so I started developing one straight away.
 
