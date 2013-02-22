@@ -4,7 +4,7 @@
   <title><![CDATA[Alestanis' Blog]]></title>
   <link href="http://blog.alestanis.com/atom.xml" rel="self"/>
   <link href="http://blog.alestanis.com/"/>
-  <updated>2013-02-22T23:02:28+01:00</updated>
+  <updated>2013-02-22T23:28:03+01:00</updated>
   <id>http://blog.alestanis.com/</id>
   <author>
     <name><![CDATA[Alejandra Estanislao]]></name>
@@ -12,6 +12,41 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Introducing Octopress-Chuck-Norris]]></title>
+    <link href="http://blog.alestanis.com/2013/02/22/introducing-octopress-chuck-norris/"/>
+    <updated>2013-02-22T23:08:00+01:00</updated>
+    <id>http://blog.alestanis.com/2013/02/22/introducing-octopress-chuck-norris</id>
+    <content type="html"><![CDATA[<p>I love Chuck Norris. And most of all, I love nerdy Chuck Norris Jokes.</p>
+
+<p>A few days ago, one of my colleagues sent me a link about a <a href="http://criso.github.com/ChuckNorrisException/">ChuckNorrisException</a> and got me browsing through the web searching for more Chuck Norris developer jokes.
+After looking for <a href="https://github.com/search?q=chuck+norris&amp;ref=commandbar">“chuck norris” on github</a>, I found the <a href="http://www.icndb.com/">Internet Chuck Norris Data Base</a>, which contains hundreds of Chuck Norris jokes separated into categories, and has a RESTful API. <em>Bingo!</em></p>
+
+<p>I thought it would be great to have random jokes on my blog. I didn’t find any plugin in the <a href="https://github.com/imathis/octopress/wiki/3rd-party-plugins">Octopress plugins list</a>, so I started developing one straight away.</p>
+
+<h3 id="and-octopress-chuck-norris-was-born">And Octopress-Chuck-Norris was born</h3>
+
+<p><em>Ta-daaah!</em></p>
+
+<p>You can see it working in this blog on the upper right corner, and you can download it on its <a href="https://github.com/alestanis/octopress-chuck-norris">github page</a>.</p>
+
+<p>Isn’t it sweet?</p>
+
+<h3 id="bonus">Bonus</h3>
+
+<p>Here are some other resources I found. Only Chuck Norris can read these at work without laughing out loud.</p>
+
+<ul>
+  <li><a href="http://radu.cotescu.com/java-and-chuck-norris/">Java and Chuck Norris</a></li>
+  <li><a href="http://codesqueeze.com/the-ultimate-top-25-chuck-norris-the-programmer-jokes/">The Ultimate Top 25 Chuck Norris “The Programmer” Jokes</a></li>
+  <li><a href="http://www.chucknorrisfacts.com/">Chuck Norris Facts</a></li>
+  <li>and… <a href="http://meta.stackoverflow.com/questions/9134/jon-skeet-facts">Jon Skeet Facts</a> (the accepted answer is from Jon Skeet himself!)</li>
+</ul>
+
+<p>Enjoy!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Replacing with regexes in all your code files]]></title>

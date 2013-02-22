@@ -251,7 +251,7 @@ task :heroku do
   puts "## Committing to local repo..."
   system "git ci -m 'update'"
   puts "## Committing to Heroku..."
-  system "git push heroku master"
+  system "git push"
 end
 
 desc "deploy public directory to github pages"
