@@ -2,57 +2,44 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
         <loc>http://blog.alestanis.com/2013/02/03/hello-everyone/</loc>
-        <lastmod>2013-02-08T13:57:38+01:00</lastmod>
+        <lastmod>2013-02-22T20:37:24+01:00</lastmod>
     </url>
     <url>
         <loc>http://blog.alestanis.com/2013/02/04/octopress-and-the-twilight-color-scheme/</loc>
-        <lastmod>2013-02-11T10:01:18+01:00</lastmod>
+        <lastmod>2013-02-22T20:37:24+01:00</lastmod>
     </url>
     <url>
         <loc>http://blog.alestanis.com/2013/02/08/cloning-a-heroku-app/</loc>
-        <lastmod>2013-02-08T14:46:57+01:00</lastmod>
+        <lastmod>2013-02-22T20:37:24+01:00</lastmod>
     </url>
     <url>
-<<<<<<< HEAD
-        <loc>http://blog.alestanis.com/robots.txt</loc>
-        <lastmod>2013-02-08T13:57:38+01:00</lastmod>
-    </url>
-    <url>
-        <loc>http://blog.alestanis.com/search.html</loc>
-        <lastmod>2013-02-11T10:01:18+01:00</lastmod>
-    </url>
-    <url>
-        <loc>http://blog.alestanis.com/main.html</loc>
-        <lastmod>2013-02-11T10:01:18+01:00</lastmod>
-=======
         <loc>
             http://blog.alestanis.com/2013/02/17/replacing-with-regexes-in-all-your-code-files/
         </loc>
-        <lastmod>2013-02-17T20:22:21+01:00</lastmod>
+        <lastmod>2013-02-22T20:37:24+01:00</lastmod>
     </url>
     <url>
         <loc>http://blog.alestanis.com/archives/</loc>
-        <lastmod>2013-02-17T20:22:21+01:00</lastmod>
+        <lastmod>2013-02-22T20:37:24+01:00</lastmod>
     </url>
     <url>
         <loc>http://blog.alestanis.com/blog/archives/</loc>
-        <lastmod>2013-02-17T20:22:21+01:00</lastmod>
+        <lastmod>2013-02-22T20:37:24+01:00</lastmod>
     </url>
     <url>
         <loc>http://blog.alestanis.com/</loc>
-        <lastmod>2013-02-17T20:22:21+01:00</lastmod>
->>>>>>> 68cae6659ed62c84c4ddd296ba6d899d3c000bcb
+        <lastmod>2013-02-22T20:37:24+01:00</lastmod>
     </url>
     <url>
-        <loc>http://blog.alestanis.com/archives/</loc>
-        <lastmod>2013-02-11T10:01:18+01:00</lastmod>
+        <loc>http://blog.alestanis.com/main.html</loc>
+        <lastmod>2013-02-22T20:37:24+01:00</lastmod>
     </url>
     <url>
-        <loc>http://blog.alestanis.com/</loc>
-        <lastmod>2013-02-11T10:01:18+01:00</lastmod>
+        <loc>http://blog.alestanis.com/robots.txt</loc>
+        <lastmod>2013-02-22T20:37:24+01:00</lastmod>
     </url>
     <url>
-        <loc>http://blog.alestanis.com/blog/archives/</loc>
-        <lastmod>2013-02-11T10:01:18+01:00</lastmod>
+        <loc>http://blog.alestanis.com/search.html</loc>
+        <lastmod>2013-02-22T20:37:24+01:00</lastmod>
     </url>
 </urlset>
