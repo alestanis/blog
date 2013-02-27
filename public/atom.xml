@@ -4,7 +4,7 @@
   <title><![CDATA[Alestanis' Blog]]></title>
   <link href="http://blog.alestanis.com/atom.xml" rel="self"/>
   <link href="http://blog.alestanis.com/"/>
-  <updated>2013-02-23T14:37:06+01:00</updated>
+  <updated>2013-02-27T13:23:52+01:00</updated>
   <id>http://blog.alestanis.com/</id>
   <author>
     <name><![CDATA[Alejandra Estanislao]]></name>
@@ -12,6 +12,31 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[The bang-bang command]]></title>
+    <link href="http://blog.alestanis.com/2013/02/27/the-bang-bang-command/"/>
+    <updated>2013-02-27T12:49:00+01:00</updated>
+    <id>http://blog.alestanis.com/2013/02/27/the-bang-bang-command</id>
+    <content type="html"><![CDATA[<p><a href="http://justinsomnia.org/2006/09/sudo-bang-bang/"><img class="right" src="http://blog.alestanis.com/images/2013-02-27-sudo-bang-bang.png" width="300" title="sudo bang bang" /></a></p>
+
+<p>Besides from the fact that saying “bang bang” makes me think of Quentin Tarantino (because of Bang bang → Nancy Sinatra → Kill Bill), which makes it already a hyper-classy command, I love “bang bang” because it’s <em>also</em> one of the most useful commands of all times.</p>
+
+<h2 id="behold-the-power-of-bang-bang">Behold the power of bang-bang</h2>
+
+<p>The bang bang command lets you execute the last command you launched from your shell, which is very useful when you need permissions to do something:</p>
+
+<p><img class="center" src="http://blog.alestanis.com/images/2013-02-27-sudo-bang-bang-bash.png" title="sudo bang bang" /></p>
+
+<p><em>Ooooh</em>, you don’t want to create that file? <em>BAM!</em> <code>sudo bang bang</code>!</p>
+
+<p>Here’s another one, for my Ruby-on-Rails friends out there: <code>bundle exec bang bang</code></p>
+
+<p><img class="center" src="http://blog.alestanis.com/images/2013-02-27-bundle-exec-bang-bang.png" title="bundle exec bang bang" /></p>
+
+<p>Yay!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Introducing Octopress-Chuck-Norris]]></title>
