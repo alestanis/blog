@@ -85,7 +85,7 @@ To use our own color scheme, we have to add a file `sass/custom/_coderay.scss` d
     @import "custom/coderay";
 {:lang="text"}
 
-TextMate's Twilight css for CodeRay is available thanks to russbrooks in [this gist](https://gist.github.com/2906599). What's great about having your own color scheme with CodeRay is that you can change around a *hundred* different colors, whereas Solarized only works with eight accent colors (you'll see later that I changed the `.CodeRay .constant` color in my custom scss file).
+TextMate's **Twilight css for CodeRay** is available thanks to russbrooks in [this gist](https://gist.github.com/2906599). If you want **GitHub's theme**, you can get it [right here](https://github.com/pie4dan/CodeRay-GitHub-Theme/blob/master/coderay.css). What's great about having your own color scheme with CodeRay is that you can change around a *hundred* different colors, whereas Solarized only works with eight accent colors (you'll see later that I changed the `.CodeRay .constant` color in my custom scss file).
 
 Next, we have to tweak the scss in order to have the right background colors and nice table line numbers. Let's add background and text colors in the `sass/custom/_colors.scss` file:
 
@@ -158,7 +158,5 @@ You can also use the single backtick syntax for inline code:
 
     `def hello`{:lang="ruby"}
 {:lang="text"}
-
-<br/>
 
 And *voilà*! You have your own color scheme, customizable at will. 

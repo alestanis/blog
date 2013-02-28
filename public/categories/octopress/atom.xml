@@ -4,7 +4,7 @@
   <title><![CDATA[Category: octopress | Alestanis' Blog]]></title>
   <link href="http://blog.alestanis.com/categories/octopress/atom.xml" rel="self"/>
   <link href="http://blog.alestanis.com/"/>
-  <updated>2013-02-27T13:23:52+01:00</updated>
+  <updated>2013-02-28T14:36:56+01:00</updated>
   <id>http://blog.alestanis.com/</id>
   <author>
     <name><![CDATA[Alejandra Estanislao]]></name>
@@ -196,7 +196,7 @@ gem <span class="string"><span class="delimiter">'</span><span class="content">c
 </tr></table>
 </div>
 
-<p>TextMate’s Twilight css for CodeRay is available thanks to russbrooks in <a href="https://gist.github.com/2906599">this gist</a>. What’s great about having your own color scheme with CodeRay is that you can change around a <em>hundred</em> different colors, whereas Solarized only works with eight accent colors (you’ll see later that I changed the <code>.CodeRay .constant</code> color in my custom scss file).</p>
+<p>TextMate’s <strong>Twilight css for CodeRay</strong> is available thanks to russbrooks in <a href="https://gist.github.com/2906599">this gist</a>. If you want <strong>GitHub’s theme</strong>, you can get it <a href="https://github.com/pie4dan/CodeRay-GitHub-Theme/blob/master/coderay.css">right here</a>. What’s great about having your own color scheme with CodeRay is that you can change around a <em>hundred</em> different colors, whereas Solarized only works with eight accent colors (you’ll see later that I changed the <code>.CodeRay .constant</code> color in my custom scss file).</p>
 
 <p>Next, we have to tweak the scss in order to have the right background colors and nice table line numbers. Let’s add background and text colors in the <code>sass/custom/_colors.scss</code> file:</p>
 
@@ -329,8 +329,6 @@ table.CodeRay td {
 </pre></td>
 </tr></table>
 </div>
-
-<p><br /></p>
 
 <p>And <em>voilà</em>! You have your own color scheme, customizable at will. </p>
 ]]></content>
